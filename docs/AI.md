@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Upload Sources to Crowdin
         uses: crowdin/github-action@v2
@@ -147,7 +147,7 @@ Then, add the following steps to your GitHub Actions workflow to extract the con
 ```yaml
 # Upload sources step
 
-- uses: actions/setup-node@v4
+- uses: actions/setup-node@v7
   with:
     node-version: '22'
 
