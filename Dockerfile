@@ -1,4 +1,4 @@
-FROM crowdin/cli:4.15.0
+FROM crowdin/cli:4.15.1
 
 RUN apk --no-cache add curl git git-lfs jq gnupg su-exec;
 
