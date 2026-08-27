@@ -39,18 +39,15 @@ This action allows you to easily integrate and automate the localization of your
 ## Crowdin CLI 5
 
 > [!IMPORTANT]
-> The `v3` version of the action runs on [Crowdin CLI 5](https://github.com/crowdin/crowdin-cli/releases) — a complete rewrite that starts instantly and no longer requires Java. The commands, the `crowdin.yml` configuration file, and the exit codes stay the same, so most workflows carry over unchanged when upgrading from `v2`.
+> The `v3` version of the action runs on [Crowdin CLI 5](https://crowdin.github.io/crowdin-cli/blog/2026/08/26/cli-v5) - a complete rewrite that starts instantly and no longer requires Java. The commands, the `crowdin.yml` configuration file, and the exit codes stay the same, so most workflows carry over unchanged when upgrading from `v2`.
 >
 > If you pass custom arguments via `command`, `command_args`, or any `*_args` input, review the following breaking changes:
 >
 > - The `pre-translate` command is now `auto-translate` (no alias).
-> - `auto-translate`: the `--translate-untranslated-only` option was removed — use `--scope` instead (untranslated is the default).
-> - `--plain` was removed — use the global `--output plain` option instead.
-> - Redundant negatable flags were removed — only the form that changes the default behavior is kept (e.g. `--auto-update` was removed while `--no-auto-update` stays; `--no-auto-approve-imported`, `--no-import-eq-suggestions`, `--no-translate-hidden`, and `--no-auto-tag` were removed). The defaults are unchanged, so simply drop the removed form.
-> - `--preserve-hierarchy` was removed — set `preserve_hierarchy: true` in your configuration file instead (`--no-preserve-hierarchy` still works).
+> - `auto-translate`: the `--translate-untranslated-only` option was removed - use `--scope` instead (untranslated is the default).
+> - `--plain` was removed - use the global `--output plain` option instead.
+> - Redundant negatable flags were removed - only the form that changes the default behavior is kept (e.g. `--auto-update` was removed while `--no-auto-update` stays; `--no-auto-approve-imported`, `--no-import-eq-suggestions`, `--no-translate-hidden`, and `--no-auto-tag` were removed). The defaults are unchanged, so simply drop the removed form.
 >
-> See the [Crowdin CLI 5 release notes](https://github.com/crowdin/crowdin-cli/releases) for the full list of changes.
-
 
 ## Usage
 
